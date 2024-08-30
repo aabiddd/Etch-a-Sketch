@@ -1,0 +1,119 @@
+/* background: 161618 */
+/* navbar: 1c1c1e */
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #161618;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+header {
+    background-color: #1c1c1e;
+}
+
+header div {
+    font-family: "Sevillana", cursive;
+    font-size: 22px;
+    padding: 12px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.frame {
+    height: 530px;
+    width: 750px;
+    margin: 22px auto;
+    padding: 22px;
+    background-color: #cf0000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+
+    /* copy pasta :p */
+    box-shadow: 0px 1px 0 rgba(255,255,255,0.05) inset, 1px 0px 0 rgba(255,255,255,0.05) inset,
+    1px 2px 0 rgba(255,255,255,0.02) inset, 2px 1px 0 rgba(255,255,255,0.02) inset,
+    2px 3px 0 rgba(255,255,255,0.02) inset, 3px 2px 0 rgba(255,255,255,0.02) inset,
+    3px 4px 0 rgba(255,255,255,0.02) inset, 4px 3px 0 rgba(255,255,255,0.02) inset,
+    4px 5px 0 rgba(255,255,255,0.02) inset, 5px 4px 0 rgba(255,255,255,0.02) inset,
+    5px 6px 0 rgba(255,255,255,0.02) inset, 6px 5px 0 rgba(255,255,255,0.02) inset,
+    6px 7px 0 rgba(255,255,255,0.02) inset, 7px 6px 0 rgba(255,255,255,0.02) inset,
+    7px 9px 0 rgba(255,255,255,0.02) inset, 8px 7px 0 rgba(255,255,255,0.02) inset,
+    8px 9px 0 rgba(255,255,255,0.02) inset, 9px 8px 0 rgba(255,255,255,0.02) inset,
+
+    -0px -1px 0 rgba(0,0,0,0.05) inset, -1px -0px 0 rgba(0,0,0,0.05) inset,
+    -1px -2px 0 rgba(0,0,0,0.05) inset, -2px -1px 0 rgba(0,0,0,0.05) inset,
+    -2px -3px 0 rgba(0,0,0,0.05) inset, -3px -2px 0 rgba(0,0,0,0.05) inset,
+    -3px -4px 0 rgba(0,0,0,0.05) inset, -4px -3px 0 rgba(0,0,0,0.05) inset,
+    -4px -5px 0 rgba(0,0,0,0.05) inset, -5px -4px 0 rgba(0,0,0,0.05) inset,
+    -5px -6px 0 rgba(0,0,0,0.05) inset, -6px -5px 0 rgba(0,0,0,0.05) inset,
+    -6px -7px 0 rgba(0,0,0,0.05) inset, -7px -6px 0 rgba(0,0,0,0.05) inset,
+    -7px -9px 0 rgba(0,0,0,0.05) inset, -8px -7px 0 rgba(0,0,0,0.05) inset,
+    -8px -9px 0 rgba(0,0,0,0.05) inset, -9px -8px 0 rgba(0,0,0,0.05) inset,
+
+    0 0 3px rgba(0,0,0,0.3), 2px 2px 3px rgba(0,0,0,0.3);
+}
+
+.logo {
+    color: rgb(255, 230, 201);
+    font-family: "Ruda", sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.logo span {
+    margin: 0px 22px;
+    font-family: "Sevillana", cursive;
+    font-size: 28px;
+    font-weight: normal;
+}
+
+#canvas {
+    width: 560px;
+    height: 360px;
+    background-color: silver;
+    aspect-ratio: 590 / 360;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 5px;
+    /* copy pasta :p */
+    box-shadow: 0px 1px 0 rgba(255,255,255,0.08), 1px 0px 0 rgba(255,255,255,0.08),
+    1px 2px 0 rgba(255,255,255,0.08), 2px 1px 0 rgba(255,255,255,0.08),
+    2px 3px 0 rgba(255,255,255,0.08), 3px 2px 0 rgba(255,255,255,0.08),
+    3px 4px 0 rgba(255,255,255,0.08), 4px 3px 0 rgba(255,255,255,0.08),
+    4px 5px 0 rgba(255,255,255,0.08), 5px 4px 0 rgba(255,255,255,0.08),
+
+    -0px -1px 0 rgba(0,0,0,0.05), -1px -0px 0 rgba(0,0,0,0.05),
+    -1px -2px 0 rgba(0,0,0,0.05), -2px -1px 0 rgba(0,0,0,0.05),
+    -2px -3px 0 rgba(0,0,0,0.05), -3px -2px 0 rgba(0,0,0,0.05),
+    -3px -4px 0 rgba(0,0,0,0.05), -4px -3px 0 rgba(0,0,0,0.05),
+    -4px -5px 0 rgba(0,0,0,0.05), -5px -4px 0 rgba(0,0,0,0.05);
+}
+
+.knob-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.knob {
+    display: inline-block;
+    height: 65px;
+    width: 65px;
+    background-color: white;
+    border-radius: 50%;
+
+    box-shadow: 2px 2px 1px rgba(0,0,0,0.5), 0 0 3px rgba(0,0,0,0.7) inset;
+}
