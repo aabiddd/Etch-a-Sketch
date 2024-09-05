@@ -48,14 +48,27 @@ main {
     align-items: center;
 }
 
-input[type='color'] {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 80px;
+#color {
     height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    padding: 0;
+    border: 1px solid #DDD;
+    box-shadow: 2px 2px 4px rgba(255,255,255,0.2);
+  }
+  
+#color::-moz-color-swatch {
     border: none;
-    cursor: pointer;
-}
+  }
+  
+#color::-webkit-color-swatch-wrapper {
+    padding: 0;
+    border-radius: 0;
+  }
+  
+#color::-webkit-color-swatch {
+    border: none;
+  }
 
 .btn {
     width: 100%;
@@ -67,6 +80,14 @@ input[type='color'] {
     padding: 10px 20px;
     border: 1px solid #515151;
     border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(255,255,255,0.2);
+}
+
+.btn:hover,
+#color:hover,
+#gridWidth:hover {
+    transform: scale(1.1);
+    transition: .2s ease-in-out;
 }
 
 .slider {
@@ -90,6 +111,7 @@ input[type='range'] {
     opacity: 0.7;
     -webkit-animation: .2s;
     transition: opacity .2s;
+    box-shadow: 2px 2px 4px rgba(255,255,255,0.2);
 }
 
 input[type='range']::-webkit-slider-thumb {
@@ -100,6 +122,7 @@ input[type='range']::-webkit-slider-thumb {
     border-radius: 50%;
     cursor: pointer;
     background: #ff0000;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
 }
 
 /* for firefox */
@@ -109,6 +132,13 @@ input[type='range']::-moz-range-thumb {
     border-radius: 50%;
     background: #ff0000;
     cursor: pointer;
+}
+
+.active-btn {
+    background-color: #161618;
+    color: white;
+    font: bold;
+    transition: .2s ease-in-out;
 }
 
 /* btn, input[type='color'] {
