@@ -50,6 +50,8 @@ function generateDiv() {
 
             grid.style.width = `${CANVAS_WIDTH/gridSize}px`;
             grid.style.height = `${CANVAS_HEIGHT/gridSize}px`;
+            // add a class to identify grid cells
+            grid.classList.add('grid-cell');
             gridRow.appendChild(grid);
             grids.push(grid);
         }
@@ -63,13 +65,13 @@ canvas.addEventListener('mousedown', (event) => {
     event.preventDefault();
     
     // ensure target is grid cell
-    if (event.target !== canvas) {
+    if (event.target.classList.contains('grid-cell')) {
         isMouseDown = true;
         colorGrid(event.target);
     }
 });
 canvas.addEventListener('mouseover', (event) => {
-    if (isMouseDown && (event.target !== canvas)) {
+    if (isMouseDown && event.target.classList.contains('grid-cell')) {
         colorGrid(event.target);
     }
 });
